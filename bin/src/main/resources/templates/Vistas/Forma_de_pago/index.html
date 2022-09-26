@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+ rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+ crossorigin="anonymous">
+ 	<link href="/css/tablas.css" rel="stylesheet">
+	<title>Formas de pago</title>
+</head>
+<body>
+	<div class="p-4">
+	
+	<h2 class="fs-5 mb-4 d-flex justify-content-center">Lista Formas de pago</h2>
+	
+	<div class="d-flex justify-content-between butons">
+	<a th:href="@{/new/forma_de_pago}" class="btn btn-secondary">Agregar</a>
+	<a th:href="@{/}" class="btn btn-success">Exportar</a>
+	</div>
+	
+		<table class="table table-striped mx-auto p-4 rounded date-style">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Forma de pago</th>
+				</tr>	
+			</thead>
+			<tbody>
+				<tr th:each="forma_de_pagos:${forma_de_pago}">
+					<td th:text="${forma_de_pagos.idforma_de_pago}"></td>
+					<td th:text="${forma_de_pagos.forma_de_pago}"></td>
+					<td class=>
+					<a th:href="@{/editar/forma_de_pago/}+${forma_de_pagos.idforma_de_pago}" class="btn btn-secondary">Editar</a>
+					<a th:href="@{/eliminar/forma_de_pago/}+${forma_de_pagos.idforma_de_pago}" class="btn btn-danger">Eliminar</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="/js/function.js"></script>
+</body>
+</html>

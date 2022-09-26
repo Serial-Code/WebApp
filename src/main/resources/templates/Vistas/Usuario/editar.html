@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+ rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+ crossorigin="anonymous"></link>
+	<title>Document</title>
+<body>
+	<div class="form-horizontal justify-content-center d-flex p-5 mt-4">
+		<div class="col-sm-5 col">
+			<form th:action="@{/save/usuario}" th:object="${usuario}" method="POST">
+				<div>
+					<div class="card-header"></div>
+					<h3>Editar Usuario</h3>
+					<div class="card-body">
+						<div class="form-group">
+							<label>ID</label>
+							<input th:field="*{idusuario}" type="text" class="form-control" readonly/>
+						</div>
+						<div class="form-group">
+							<label>Primer nombre</label>
+							<input th:field="*{primer_nombre}" type="text" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label>Segundo nombre</label>
+							<input th:field="*{segundo_nombre}" type="text" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label>Primer apellido</label>
+							<input th:field="*{primer_apellidos}" type="text" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label>Segundo apellido</label>
+							<input th:field="*{segundo_apellido}" type="text" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label>Tipo de identificacion</label>
+							<select th:field="*{tipoidentificacion}" type="text" class="form-control">
+								<option value="C.C.">C.C.</option>
+  								<option value="T.I.">T.I.</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>No. Identificacion</label>
+							<input th:field="*{noidentificacion}" type="text" class="form-control"/>
+    							
+						</div>
+						<div class="form-group">
+							<label>Telefono</label>
+							<input th:field="*{telefono}" type="text" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label>Direccion</label>
+							<input th:field="*{direccion}" type="text" class="form-control"/>
+						</div>
+						
+					</div>
+						<div class="mt-4 container">
+							<div class="row">
+							<div class="justify-content-between">
+								<div class="col mt-2">
+									<input type="submit" value="Guardar " class="btn btn-primary">
+								
+								</div>
+							<div class="col mt-2">
+								<a th:href="@{/listar/usuario}" class="btn btn-secondary">Cancelar</a>
+							</div>	
+							
+							
+					
+						</div>
+						
+						</div>
+					</div>
+					
+				</div>
+			</form>
+		
+		
+		</div>
+
+	</div>
+
+
+</body>
+
+</head>
+</html>
+	
