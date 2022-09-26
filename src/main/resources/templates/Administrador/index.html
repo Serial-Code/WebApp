@@ -57,7 +57,7 @@
 					
 					<li class="nav-link">
 						<a th:href="@{/listar/proveedor}" target="Principal">
-							<i class="fa-solid fa-layer-group icon"></i>
+							<i class="fa-sharp fa-solid fa-users icon"></i>
 							<span class="text nav-text">Proveedor</span>
 						</a>
 					</li>
@@ -87,17 +87,12 @@
 					</li>
 
 					<li class="nav-link">
-						<a href="CalificacionesTable.html" target="Principal">
+						<a th:href="@{/listar/calificacion}" target="Principal">
 							<i class="fa-solid fa-star-half-stroke icon"></i>
 							<span class="text nav-text">Calificaciones</span>
 						</a>
 					</li>
-					<li class="nav-link">
-						<a th:href="@{/listar/respuesta}" target="Principal">
-							<i class="fa-solid fa-star-half-stroke icon"></i>
-							<span class="text nav-text">Respuestas</span>
-						</a>
-					</li>
+					
 					<br>
 					<br>
 					<br>
@@ -105,12 +100,6 @@
 						<a th:href="@{/listar/usuario}" target="Principal">
 							<i class="fa-solid fa-user-check icon"></i>
 							<span class="text nav-text">Usuarios</span>
-						</a>
-					</li>
-					<li class="nav-link">
-						<a th:href="@{/clientes/clientes}" target="Principal">
-							<i class="fa-solid fa-users icon"></i>
-							<span class="text nav-text">Clientes</span>
 						</a>
 					</li>
 					
@@ -170,7 +159,7 @@
             <li><a class="dropdown-item" href="Modulos/Perfil/perfil.html" target="Principal">Mi perfil</a></li>
             <li><a class="dropdown-item" href="Pagina web/Proyecto/NewProyect.html">Pagina web</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="formInicioS.html" onclick="Ssesion()">Cerrar sesion</a></li>
+            <li><a class="dropdown-item" th:onclick="session()">Cerrar sesion</a></li>
           </ul>
         </li>
         
@@ -283,6 +272,6 @@
 <script type="text/javascript" src="js/Datateable.js"></script>
 
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
-	<script src="js/CodigoEnviar.js"></script> 
+	<script th:src="@{/js/cerrar_session.js}"></script> 
 
 </html>

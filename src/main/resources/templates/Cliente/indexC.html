@@ -62,29 +62,23 @@
 							<a th:href="@{/listar/cotizacion}"  target="Principal">
 							<i class="fa-brands fa-wpforms icon"></i>
 							<span class="text nav-text">Solicitar cotización</span>
-						<</a>
+						</a>
 					</li>
 
 					<li class="nav-link">
 							<a th:href="@{/listar/seguimiento_envio}"  target="Principal">
 							<i class="fa-solid fa-box-open icon"></i>
-							<span class="text nav-text">Seguimiento del envio</span>
+							<span class="text nav-text">Seguimiento envio</span>
 						</a>
 					</li>
 
 					<li class="nav-link">
-							<a th:href="@{/listar/pqrs/add.html}"  target="Principal">
+							<a th:href="@{/new/pqrs}"  target="Principal">
 							<i class="fa-solid fa-file-signature icon"></i>
 							<span class="text nav-text">Crear PQRS</span>
 						</a>
 					</li>
 
-					<li class="nav-link">
-							<a th:href="@{/listar/pqrs}"  target="Principal">
-							<i class="fa-solid fa-chart-bar icon"></i>
-							<span class="text nav-text">Revisar PQRS</span>
-						</a>
-					</li>
 
 
 					<li class="nav-link">
@@ -150,7 +144,7 @@
             <li><a class="dropdown-item" href="Modulos/Perfil/perfil.html" target="Principal">Mi perfil</a></li>
             <li><a class="dropdown-item" href="../Pagina web/Proyecto/NewProyect.html">Pagina web</a></li>
             <li><hr class="dropdown-divider"></hr></li>
-            <li><a class="dropdown-item" href="formInicioS.html">Cerrar sesion</a></li>
+            <li><a class="dropdown-item" th:onclick="session()">Cerrar sesion</a></li>
           </ul>
         </li>
         
@@ -262,5 +256,5 @@
 <script type="text/javascript" src="js/Datateable.js"></script>
 
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
-<script src="js/CodigoEnviar.js"></script> 
+<script th:src="@{/js/cerrar_session.js}"></script> 
 </html>

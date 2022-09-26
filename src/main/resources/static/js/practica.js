@@ -13,15 +13,18 @@ function validar(){
 		}
 	}
 
-	if (user === "Julian" && password === "1234"){
+	if (user === "Julian", "julian", "julesteban2003@gmail.com" && password === "1002525126"){
 		alert("Exitoso","succes")
-		window.location = "DASH-CLIENTE/index.html";
+		window.location = "/index";
 	}
-	else
-		if(user === "Geraldin" && password === "4444"){
+	else if(user === "Geraldin", "geraldin","rosasgeraldine0@gmail.com" && password === "445587"){
 			alert("Exitoso","succes")
 
-			window.location="index.html";
+			window.location="/";
+		} else if(user === "Laura", "laura","lauradsanchezv09@gmail.com" && password === "09092"){
+			alert("Exitoso","succes")
+			
+			window.location="/index";
 		}
 
 		else{
@@ -30,4 +33,3 @@ function validar(){
 
 
 }
-

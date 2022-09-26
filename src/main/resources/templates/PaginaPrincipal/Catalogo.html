@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+<link th:href="@{/css/estiloscatalogo.css}" rel="stylesheet">
+<link th:href="@{/css/estilos.css}" rel="stylesheet">
+<link th:href="@{/css/all.min.css}" rel="stylesheet" >
+<link th:href="@{/css/estilosInicio.css}" rel="stylesheet" >
+<link th:href="@{fontawesome-free-6.1.1-web/css/all.css}" rel="stylesheet">
+	<title>Catalogo</title>
+</head>
+<body>
+	<!--NAVBAR-->
+	<nav class="navbar navbar-expand-sm  navbar-light" style="background-color: #5EA2AF;">
+		<div class="container-fluid">
+			<a class="navbar-brand " th:href="@{/}">
+				<img th:src="@{img/logotipomult.png}"  alt="" width="38">
+			</a>
+
+			<button class="navbar-toggler" 
+			type="button" 
+			data-bs-toggle="collapse"
+			data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent"
+			aria-expanded="false"
+			aria-label="Toogle navigation">
+
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto text-center">
+					<li class="nav-item"><a class="nav-link" th:href="@{/inicio}">Inicio</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{/catalogo}">Catalogo</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{/contacto}">Contacto</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{/nosotros}">Nosotros</a></li> 
+					<li class="nav-item"><a class="nav-link " th:href="@{/logearse}">Iniciar sesión</a></li>
+					<li class="nav-item"><a class="nav-link " href="">Resgistrate</a></li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		
+			<div class="container border text-center">
+				<div class="row pt-3">
+					
+						<div class="banner">
+			               <img th:src="@{img/Productos/banner.png}" alt="">
+			            </div>
+					
+				</div>
+			</div>
+		
+
+		<div class="subtitleone">
+			<h2>¡Promociones exclusivas!</h2>
+		</div>	
+
+		<article>
+		<div class="part1">
+				<h2></h2>
+				<div class="cuadro">
+        		<img th:src="@{img/Productos/plastilina.png}" alt="">
+        		<br><br>
+        		<h4>20% de descuento</h4>
+       			<p>Plastilina de firme consistencia</p>
+ 
+    			</div>
+    <!--columna 2-->
+   				 <div class="cuadro">
+        		<img th:src="@{img/Productos/notebook.jpg}" alt="">
+       			 <br><br>
+       			 <h4>29% de descuento</h4>
+       			 <p>Cuadernos argollados 100 hojas</p>
+    			</div>
+    <!--columna-->
+    			<div class="cuadro">
+        		<img th:src="@{img/Productos/marcadores.jpg}" alt="">
+        		<br><br>
+        		<h4>20% de descuento</h4>
+        		<p>Marcadores permanentes</p>
+    			</div>
+
+    			<div class="cuadro">
+        		<img th:src="@{img/Productos/BOLIGRAFO.png}" alt="">
+        		<br><br>
+        		<h4>10% de descuento</h4>
+        		<p>Boligrafos x12</p>
+    			</div>
+
+    			<div class="cuadro">
+        		<img th:src="@{img/Productos/colores.png}" alt="">
+        		<br><br>
+        		<h4>20% de descuento</h4>
+        		<p>Colores punta resistente</p>
+    			</div>
+
+
+		</div>
+
+		<div class="subtitletwo" id="marcadores">
+			<h2>Productos de multicolor</h2>
+		</div>
+
+		<div class="part2">
+				<div class="cuadro2">
+        		<img th:src="@{img/Productos/micropunta.png}" alt="">
+        		<br><br>
+       			<p>Micropunta negro X10</p>
+       			<a href="">$19.000</a>
+ 
+    			</div>
+    <!--columna 2-->
+   				 <div class="cuadro2">
+        		<img th:src="@{img/Productos/borrador.jpg}" alt="">
+       			 <br><br>
+       			 <p>Borrador nata Caja X12</p>
+       			 <a href="Paginas error/404.html">$6.800</a>
+    			</div>
+    <!--columna-->
+    			<div class="cuadro2">
+        		<img th:src="@{img/Productos/marcadores.jpg}" alt="">
+        		<br><br>
+        		<p>Marcadores permanentes</p>
+        		<a href="Paginas error/404.html">$15.000</a>
+    			</div>
+
+    			<div class="cuadro2">
+        		<img th:src="@{img/Productos/BOLIGRAFO.png}" alt="">
+        		<br><br>
+        		<p>Boligrafos x12</p>
+        		<a href="Paginas error/404.html">$7.900</a>
+    			</div>
+
+    			<div class="cuadro2">
+        		<img th:src="@{img/Productos/colores.png}" alt="">
+        		<br><br>
+        		<p>Colores punta gruesa y resistente</p>
+        		<a href="">$18.000</a>
+    			</div>
+
+    			<div class="cuadro2">
+        		<img th:src="@{img/Productos/plastilina.png}" alt="">
+        		<br><br>
+       			<p>Plastilina de firme consistencia X12</p>
+       			<a href="Paginas error/404.html">$9.000</a>
+ 
+    			</div>
+
+    			<div class="cuadro2">
+        		<img src="@{img/Productos/sharpie.jpg}" alt="">
+        		<br><br>
+       			<p>Marcadores punta fina</p>
+       			<a href="Paginas error/404.html">$22.000</a>
+ 
+    			</div>
+
+    			<div class="cuadro2">
+        		<img class="offi" th:src="@{img/Productos/colores offi esco.jpg}" alt="">
+        		<br><br>
+       			<p>Colores unipuntas triangulares</p>
+       			<a href="Paginas error/404.html">$9.100</a>
+ 
+    			</div>
+
+    			<div class="cuadro2">
+        		<img th:src="@{img/Productos/cuadernosnorma.jpg}" alt="">
+        		<br><br>
+       			<p>Cuadernos cuadriculados 100 hojas</p>
+       			<a href="Paginas error/404.html" id="">$7.900</a>
+ 
+    			</div>
+
+    			<div class="cuadro2">
+        		<img th:src="@{img/Productos/corrector de cinta.jpg}" alt="">
+        		<br><br>
+       			<p>Corrector de cinta 10m</p>
+       			<a href="Paginas error/500.html">$3.900</a>
+ 
+    			</div>
+
+
+    			<div class="cuadro2">
+        		<img th:src="@{img/Productos/tajalapiz.jpg}" alt="">
+        		<br><br>
+       			<p>Sacapuntas con deposito X2</p>
+       			<a href="Paginas error/500.html">$3.400</a>
+ 
+    			</div>
+
+
+    			<div class="cuadro2">
+        		<img th:src="@{img/Productos/cuadernoargollado.jpg}" alt="">
+        		<br><br>
+       			<p>Cuaderno argollado semiduro</p>
+       			<a href="Paginas error/500.html">$6.500</a>
+ 
+    			</div>
+
+    			<div class="cuadro2">
+        		<img th:src="@{img/Productos/cuadernoargollado.jpg}" alt="">
+        		<br><br>
+       			<p>Lana escolar X12</p>
+       			<a href="Paginas error/500.html">$10.500</a>
+ 
+    			</div>
+
+    			<div class="cuadro2">
+        		<img th:src="@{img/Productos/escarcha.jpg}" alt="">
+        		<br><br>
+       			<p>Escarcha brillatina tubo X10</p>
+       			<a href="Paginas error/500.html">$4.500</a>
+ 
+    			</div>
+
+    			<div class="cuadro2">
+				<img th:src="@{img/Productos/kitregla.jpg}" alt="">
+        		<br><br>
+       			<p>Kit de reglas escolares</p>
+       			<a href="Paginas error/500.html">$8.000</a>
+
+       			</div>
+ 
+    			</div>
+
+
+		</div>
+		</article>
+
+
+	<div class="prefooter">
+		<div class="centradoaling">
+			<div class="cont">
+				<i class="fa-solid fa-award"></i><p>Calidad</p>
+			</div>
+			<div class="cont">
+				<i class="fa-solid fa-circle-check"></i><p>Facil</p>
+			</div>
+			<div class="cont">
+				<i class="fa-sharp fa-solid fa-truck"></i><p>Entrega en tu barrio</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!--FOOTER-->
+	<div id="footer" class="p-5" style="background-color: #5EA2AF;">
+		
+			<div class="container">
+				<div class="row  ">
+				    <div class="col  font-weight-light">
+					  <h4>Medios de pago</h4>
+					  <br>
+					  <img class="nequi" th:src="@{img/nequilogo.png}" alt="">
+					  <img class="davi" th:src="@{img/daviplatalogo.png}" alt="">
+				    </div>
+			    
+				
+			
+			    <div class="col ">
+					<h4>Contacto</h4>
+					<p>3114680826</p>
+					<p>papeleriamulticolor1@gmail.com</p>
+					<p>papeleriamulticolor1@hotmail.com</p>
+				</div>
+				<div class="col">
+					<a id="#inicio"><img th:src="@{img/logotipocompleto.png}" class="logo" alt=""></a>
+				</div>
+			  
+
+			   <div class="redes mb-3 text-center mt-5">
+				<ul>
+					<a href=""><img th:src="@{img/facebook-2935402_1280.png}" class="redes"></a>
+					<a href=""><img th:src="@{img/instagram-3814048_1280.png}" class="redes" alt=""></a>
+					<a href=""><img th:src="@{img/twitter-2935414_1280.png}" class="redes" alt=""></a>
+					<a href=""><img th:src="@{img/youtube-2935416_1280.png}" class="redes" alt=""></a>
+
+				</ul>
+
+			    </div>	
+
+			  </div>
+			</div>
+	</div>
+	</main>
+    <script src="js/JQuery.js"></script>
+	<script src="js/Popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

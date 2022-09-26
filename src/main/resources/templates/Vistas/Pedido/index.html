@@ -9,47 +9,46 @@
     <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="/css/datatables.min.css">
     <link href="/css/tablas.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Pedidos</title>
 </head>
 <body>
     <div class="datateable p-4">
      
-            <h2 class="fs-5 mb-4 d-flex justify-content-center">Lista Productos</h2>
+            <h2 class="fs-5 mb-4 d-flex justify-content-center">Lista Pedidos</h2>
 	
 				<div class="d-flex justify-content-end butons">
-					<a th:href="@{/new/producto}" class="btn btn-secondary">Agregar</a>
+					<a th:href="@{/new/pedido}" class="btn btn-secondary">Agregar</a>
 				</div>
             <br>
         <div class="row ms-0 mx-0">
                 <div class="col-lg-12">
-                    <div class="table-responsive">        
-                            <table id="example" class="table table-striped rounded date-style">
+                    <div class="table-responsive">   
+         <table id="example" class="table table-striped rounded date-style">
 			<thead>
 				<tr>
-					<th>ID</th>
-					<th>Nombre</th>
-					<th>Categoria</th>
+					<th>ID</th>			
 					<th>Cantidad</th>
-					<th>Estado</th>
-					<th>Precio</th>
+					<th>Fecha</th>
+					<th>Direccion</th>
+					<th>Descuento</th>
 					<th>Acciones</th>
 				</tr>	
 			</thead>
 			<tbody>
-				<tr th:each="productos:${producto}">
-					<td th:text="${productos.idproducto}"></td>
-					<td th:text="${productos.nombre}"></td>
-					<td th:text="${productos.categoria}"></td>
-					<td th:text="${productos.cantidad}"></td>
-					<td th:text="${productos.estado}"></td>
-					<td th:text="${productos.precio}"></td>
+				<tr th:each="pedidos:${pedido}">
+					<td th:text="${pedidos.idpedido}"></td>
+					<td th:text="${pedidos.cantidad}"></td>
+					<td th:text="${pedidos.fecha}"></td>
+					<td th:text="${pedidos.direccion}"></td>
+					<td th:text="${pedidos.descuento}"></td>
 					<td class=>
-					<a th:href="@{/editar/producto/}+${productos.idproducto}" class="btn btn-secondary">Editar</a>
-					<a th:onclick="eliminar([[${productos.idproducto}]])" class="btn btn-danger">Eliminar</a>
+					<a th:href="@{/editar/pedido/}+${pedidos.idpedido}" class="btn btn-secondary">Editar</a>
+					<a th:onclick="eliminar([[${pedidos.idpedido}]])" class="btn btn-danger">Eliminar</a>
 					</td>
 				</tr>
 			</tbody>
-		</table>         
+		</table>                
+                      
                     </div>
                 </div>
         </div>      
@@ -58,7 +57,7 @@
 
 	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<script src="/js/delete/functionProducto.js"></script>
+	<script src="/js/delete/functionPedido.js"></script>
 
 </html>
 

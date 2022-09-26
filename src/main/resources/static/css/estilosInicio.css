@@ -1,0 +1,83 @@
+#ribbon{
+	background-color: rgb(33, 158, 188);
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgb(173, 232, 244) 25px, rgb(72, 202, 228) 35px);
+}
+
+#ribbon::after{
+	content: ´´;
+	background-color: transparent;
+	display: block;
+	height: 20px;
+	width: 50%;
+	margin: 0 auto;
+	position: relative;
+	left: auto;
+	margin-top: -40px;
+}
+
+#birthday{
+	background-color: rgb(33, 158, 188);
+	position: relative;
+	margin-top: -20px;
+	z-index: 10;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#birthday img{
+	position: relative;
+	margin-top: -30px;
+}
+
+.text-shadow{
+	text-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+#separador-ribbon{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+
+#separador-ribbon .content{
+	width: 150%;
+	height: 150px;
+	margin-left: -25%;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	background-color: #F9C22E;
+}
+
+
+#productos{
+	background: rgb(255, 255, 255);
+	background: url(..), linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, right rgba(99, 196, 255, 1) 57%);
+	background-repeat: repeat-x;
+	background-size: 75%;
+	margin-top: -20px;
+
+}
+#footer{
+
+	background: #16a085;
+	color: #fff;
+	background-size: 50px 50px;
+}
+
+.nequi{
+	width: 50px;
+
+}
+.davi{
+	width: 50px;
+}
+.logo{
+	width: 150px;
+}
+.redes{
+	width: 23%;
+	border-radius: 50%;
+	cursor: pointer;
+	align-content: center;
+	opacity: 80%;
+}

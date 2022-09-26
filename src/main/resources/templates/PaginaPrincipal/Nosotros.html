@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+
+<title>Papeleria Multicolor</title>
+<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+<link th:href="@{/css/estilosnosotros.css}" rel="stylesheet">
+<link th:href="@{/css/estilos.css}" rel="stylesheet">
+<link th:href="@{/css/all.min.css}" rel="stylesheet" >
+<link th:href="@{/css/estilosInicio.css}" rel="stylesheet" >
+<link th:href="@{fontawesome-free-6.1.1-web/css/all.css}" rel="stylesheet">
+
+
+	
+</head>
+<body>
+	<!--NAVBAR-->
+	<nav class="navbar navbar-expand-sm  navbar-light" style="background-color: #5EA2AF;">
+		<div class="container-fluid">
+			<a class="navbar-brand " th:href="@{/}">
+				<img src="img/logotipomult.png"  alt="" width="38">
+			</a>
+
+			<button class="navbar-toggler" 
+			type="button" 
+			data-bs-toggle="collapse"
+			data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent"
+			aria-expanded="false"
+			aria-label="Toogle navigation">
+
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto text-center">
+					<li class="nav-item"><a class="nav-link" th:href="@{/inicio}">Inicio</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{/catalogo}">Catalogo</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{/contacto}">Contacto</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{/nosotros}">Nosotros</a></li> 
+					<li class="nav-item"><a class="nav-link " th:href="@{/logearse}">Iniciar sesión</a></li>
+					<li class="nav-item"><a class="nav-link " href="">Resgistrate</a></li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+	<section>
+		<h2 class="container">Somos una Empresa dedicada a la comercialización de productos de papelería, contamos con un amplio portafolio para que nuestros clientes  puedan encontrar en un solo lugar todo lo que necesitan.
+Es nuestro propósito brindar el mejor servicio a travez de nuestra pagina web y tienda física.
+Con el objetico de ser una tienda confiable en la que tendrás la mejor experiencia de compra.</h2>
+	</section>
+
+	<div class="prefooter">
+		<div class="centradoaling">
+			<div class="cont">
+				<i class="fa-solid fa-award"></i><p>Calidad</p>
+			</div>
+			<div class="cont">
+				<i class="fa-solid fa-circle-check"></i><p>Facil</p>
+			</div>
+			<div class="cont">
+				<i class="fa-sharp fa-solid fa-truck"></i><p>Entrega en tu barrio</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!--FOOTER-->
+	<div id="footer" class="p-5" style="background-color: #5EA2AF;">
+		
+			<div class="container">
+				<div class="row  ">
+				    <div class="col  font-weight-light">
+					  <h4>Medios de pago</h4>
+					  <br>
+					  <img class="nequi" src="img/nequilogo.png" alt="">
+					  <img class="davi" src="img/daviplatalogo.png" alt="">
+				    </div>
+			    
+				
+			
+			    <div class="col ">
+					<h4>Contacto</h4>
+					<p>3114680826</p>
+					<p>papeleriamulticolor1@gmail.com</p>
+					<p>papeleriamulticolor1@hotmail.com</p>
+				</div>
+				<div class="col">
+					<a id="#inicio"><img src="img/logotipocompleto.png" class="logo" alt=""></a>
+				</div>
+			  
+
+			   <div class="redes mb-3 text-center mt-5">
+				<ul>
+					<a href=""><img src="img/facebook-2935402_1280.png" class="redes"></a>
+					<a href=""><img src="img/instagram-3814048_1280.png" class="redes" alt=""></a>
+					<a href=""><img src="img/twitter-2935414_1280.png" class="redes" alt=""></a>
+					<a href=""><img src="img/youtube-2935416_1280.png" class="redes" alt=""></a>
+
+				</ul>
+
+			    </div>	
+
+			  </div>
+			</div>
+	</div>
+
+		<script src="js/Popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+	
+</body>
+</html>

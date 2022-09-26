@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/EstilosForms.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/all.min.css">
+	<link rel="stylesheet" type="/js/practica.js" href="">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+	<title>Inicia sesion</title>
+</head>
+<body>
+	<img src="img/wave.png" class="wave">
+	<div class="container">
+		<div class="img">
+			<img src="img/logo 1.png">
+		</div>
+		<div class="login-container">
+			<form action="index.html" id="validar">
+				<img class="avatar" src="img/undraw_male_avatar_323b.svg">
+				<h2>Bienvenido</h2>
+				<div class="input-div one">
+					<div class="i">
+						<i class="fa-solid fa-user"></i>
+					</div>
+					<div>
+						<h5>Usuario</h5>
+						<input class="input" type="text" id="usuario">
+					</div>
+				</div>
+
+
+				<div class="input-div two">
+					<div class="i">
+						<i class="fa-solid fa-lock"></i>
+					</div>
+					<div>
+						<h5>Contraseña</h5>
+						<input class="input" type="password" id="contraseña">
+					</div>
+				</div>
+					<a href="#" class="link-2">¿Olvidaste la Contraseña?</a>
+				<input type="button" class="btn" value="Iniciar sesion" id="btn" th:onclick="validar()">
+
+			</form>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/js/practica.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+</body>
+</html>
+
+<script src="/js/jQuery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/forms.js"></script>
